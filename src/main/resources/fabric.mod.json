@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "seedray1218",
+  "version": "${version}",
+  "name": "Seedray1218",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/seedray1218/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "moe.quoex.seedray1218.client.Seedray1218DataGenerator"
+    ],
+    "client": [
+      "moe.quoex.seedray1218.client.Seedray1218Client"
+    ],
+    "main": [
+      "moe.quoex.seedray1218.Seedray1218"
+    ]
+  },
+  "mixins": [
+    "seedray1218.mixins.json",
+    {
+      "config": "seedray1218.client.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "seedray1218.sodium.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "suggests": {
+    "sodium": "*"
+  }
+}

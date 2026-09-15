@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "moe.quoex.seedray1218.mixin.sodium",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "moe.quoex.seedray1218.mixin.SeedrayMixinPlugin",
+  "client": [
+    "SodiumBlockRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

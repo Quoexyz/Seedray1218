@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "moe.quoex.seedray1218.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BlockStateBaseMixin",
+    "CountPlacementModifierAccessor",
+    "HeightRangePlacementModifierAccessor",
+    "HeightContextMixin",
+    "LightTextureMixin",
+    "RarityFilterPlacementModifierAccessor",
+    "VisGraphMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
